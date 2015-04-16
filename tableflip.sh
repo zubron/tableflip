@@ -21,7 +21,7 @@ tableflip()
 }
 
 echo -e "\n\033[1F\033[s"
-while [ 1 = 1 ]
+while :
 do
     table
     tableflip
