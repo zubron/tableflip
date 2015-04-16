@@ -20,6 +20,14 @@ tableflip()
     sleep 0.5
 }
 
+stopflippingtablesfornow()
+{
+    echo -e "\033[u"
+    exit
+}
+
+trap stopflippingtablesfornow SIGINT
+
 echo -e "\n\033[1F\033[s"
 while :
 do
